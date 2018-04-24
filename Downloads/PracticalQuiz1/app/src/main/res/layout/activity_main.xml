@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akshay.practicalquiz1.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        app:title="UdacityPracticalQuiz1"
+        app:titleTextColor="#F44336"
+        android:elevation="4dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/wave"
+        android:layout_below="@id/my_toolbar"
+        >
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:hint="Username"
+            android:textColorHint="#F9A825"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/emailEditText"
+            android:hint="Email"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textColorHint="#F9A825"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameEditText"
+            />
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/writeEditText"
+            android:textColorHint="#F9A825"
+            android:inputType="textLongMessage"
+            android:hint="Write about yourself"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_textsms_black_24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:minLines="2"
+            android:maxLines="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailEditText"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/writeEditText"
+            android:layout_centerHorizontal="true"
+            android:text="next"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

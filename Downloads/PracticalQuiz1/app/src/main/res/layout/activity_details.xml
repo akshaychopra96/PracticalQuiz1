@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akshay.practicalquiz1.DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        style="@style/HeaderBar"
+        app:titleTextColor="@color/colorAccent"
+        app:title="UdacityPracticalQuizOne"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/beach"
+        android:gravity="center_horizontal|center_vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:id="@+id/imageView1"
+                android:src="@drawable/ic_person_pin"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:textColor="#F9A825"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="DEMO USER NAME"
+            android:textStyle="bold"
+            android:layout_below="@id/view2"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#F9A825"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:gravity="center_horizontal"
+            android:text="DEMO EMAIL"
+            android:layout_below="@id/tv1"
+               />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:lines="2"
+            android:textColor="#F9A825"
+            android:gravity="center_horizontal"
+            android:text="This is the Demo Description and \nwill replace the original one here "
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tv2"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
